@@ -10,6 +10,14 @@ public class Pilot extends Person {
     public String makeNoise() {
         return "Gonna do some flyin' today wee";
     }
+    
+    public void fly(Aircraft aircraft){
+        aircraft.stopRiding();
+    }
+
+    public void land(Aircraft aircraft){
+        aircraft.stopRiding();
+    }
 
 
 }
