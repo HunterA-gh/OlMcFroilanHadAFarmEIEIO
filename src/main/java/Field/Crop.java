@@ -2,5 +2,5 @@ package Field;
 
 import Interfaces.Produce;
 
-public class Crop implements Produce {
+public abstract class Crop implements Produce {
 }

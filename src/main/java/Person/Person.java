@@ -2,5 +2,5 @@ package Person;
 
 import Interfaces.*;
 
-public class Person implements Botanist, Pilot, Rider, Eater, NoiseMaker {
+public abstract class Person implements Eater, NoiseMaker {
 }

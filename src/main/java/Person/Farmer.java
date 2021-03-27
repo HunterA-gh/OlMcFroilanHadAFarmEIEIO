@@ -1,4 +1,6 @@
 package Person;
 
-public class Farmer extends Person{
+import Interfaces.*;
+
+public class Farmer extends Person implements Botanist, Rider {
 }

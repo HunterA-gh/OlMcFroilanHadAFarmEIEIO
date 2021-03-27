@@ -1,5 +1,7 @@
 package Vehicle;
 
-public class CropDuster extends Aircraft implements FarmVehicle{
+import Interfaces.FarmVehicle;
+
+public class CropDuster extends Aircraft implements FarmVehicle {
 
 }

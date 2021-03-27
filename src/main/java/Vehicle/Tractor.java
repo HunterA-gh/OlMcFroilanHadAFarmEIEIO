@@ -1,4 +1,6 @@
 package Vehicle;
 
-public class Tractor extends Vehicle implements FarmVehicle{
+import Interfaces.FarmVehicle;
+
+public class Tractor extends Vehicle implements FarmVehicle {
 }

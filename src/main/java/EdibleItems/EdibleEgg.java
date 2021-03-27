@@ -1,4 +1,4 @@
-package Animal.Chicken;
+package EdibleItems;
 
 import Interfaces.Edible;
 

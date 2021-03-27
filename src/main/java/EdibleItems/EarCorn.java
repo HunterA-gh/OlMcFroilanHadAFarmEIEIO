@@ -1,4 +1,4 @@
-package Field;
+package EdibleItems;
 
 import Interfaces.Edible;
 

@@ -1,4 +1,4 @@
 package Vehicle;
 
-public class Aircraft extends Vehicle{
+public abstract class Aircraft extends Vehicle{
 }

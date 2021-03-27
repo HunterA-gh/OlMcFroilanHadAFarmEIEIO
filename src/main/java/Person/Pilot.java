@@ -1,4 +1,4 @@
 package Person;
 
-public interface Pilot {
+public class Pilot extends Person {
 }
