@@ -4,4 +4,5 @@ import Interfaces.FarmVehicle;
 
 public class CropDuster extends Aircraft implements FarmVehicle {
 
+
 }
