@@ -11,11 +11,6 @@ public class ChickenCoop {
     public ArrayList<Chicken> chickens = new ArrayList<>();
 
 
-
-
-
-
-
     public void addChicken(Chicken chicken) {
         this.chickens.add(chicken);
     }
