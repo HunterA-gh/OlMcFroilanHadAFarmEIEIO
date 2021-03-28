@@ -5,7 +5,6 @@ import Animals.Horse;
 import java.util.ArrayList;
 
 public class Stable {
-
     public ArrayList<Horse> stable = new ArrayList<>();
 
     public void addHorse(Horse horse) {
@@ -16,8 +15,8 @@ public class Stable {
         this.stable.remove(horse);
     }
             
-    public ArrayList getHorse() {
-        return stable;
+    public Horse getHorse(int horseNum) {
+        return this.stable.get(horseNum);
     }
             
     public int amountOfHorses() {

@@ -9,19 +9,17 @@ import Vehicle.*;
 import java.util.ArrayList;
 
 public class Farm {
-    public ArrayList<Stable> farmStable = new ArrayList<>();
-    public ArrayList<ChickenCoop> farmChickencoop = new ArrayList<>();
-    public ArrayList<FarmVehicle> tractors = new ArrayList<>();
-    public Aircraft farmDuster;
-    public FarmHouse farmhouse;
-    public Field farmField;
+    public ArrayList<Stable> farmStable = new ArrayList<Stable>();
+    public ArrayList<ChickenCoop> farmChickenCoop = new ArrayList<ChickenCoop>();
+    public ArrayList<FarmVehicle> tractors = new ArrayList<FarmVehicle>();
+    public Aircraft farmDuster = new CropDuster();
+    public FarmHouse farmHouse = new FarmHouse();
+    public Field farmField = new Field();
 
     public Farm() {
-        this.farmhouse = new FarmHouse();
-        tractors.add(new Tractor());
-        tractors.add(new Tractor());
+        this.tractors.add(new Tractor());
+        this.tractors.add(new Tractor());
 
-        this.farmDuster = new CropDuster();
 
         this.farmField.addCropRow(new CropRow());
         this.farmField.addCropRow(new CropRow());
@@ -59,7 +57,6 @@ public class Farm {
         farmStable.add(new Stable());
         farmStable.add(new Stable());
 
-
         farmStable.get(0).addHorse(new Horse());
         farmStable.get(0).addHorse(new Horse());
         farmStable.get(0).addHorse(new Horse());
@@ -71,29 +68,29 @@ public class Farm {
         farmStable.get(2).addHorse(new Horse());
         farmStable.get(1).addHorse(new Horse());
 
-        farmChickencoop.add(new ChickenCoop());
-        farmChickencoop.add(new ChickenCoop());
-        farmChickencoop.add(new ChickenCoop());
-        farmChickencoop.add(new ChickenCoop());
 
+        farmChickenCoop.add(new ChickenCoop());
+        farmChickenCoop.add(new ChickenCoop());
+        farmChickenCoop.add(new ChickenCoop());
+        farmChickenCoop.add(new ChickenCoop());
 
-        farmChickencoop.get(0).addChicken(new Chicken());
-        farmChickencoop.get(0).addChicken(new Chicken());
-        farmChickencoop.get(0).addChicken(new Chicken());
-        farmChickencoop.get(0).addChicken(new Chicken());
-        farmChickencoop.get(1).addChicken(new Chicken());
-        farmChickencoop.get(1).addChicken(new Chicken());
-        farmChickencoop.get(1).addChicken(new Chicken());
-        farmChickencoop.get(1).addChicken(new Chicken());
-        farmChickencoop.get(2).addChicken(new Chicken());
-        farmChickencoop.get(2).addChicken(new Chicken());
-        farmChickencoop.get(2).addChicken(new Chicken());
-        farmChickencoop.get(3).addChicken(new Chicken());
-        farmChickencoop.get(3).addChicken(new Chicken());
-        farmChickencoop.get(3).addChicken(new Chicken());
-        farmChickencoop.get(0).addChicken(new Chicken());
-        farmChickencoop.get(1).addChicken(new Chicken());
-        farmChickencoop.get(2).addChicken(new Chicken());
+        farmChickenCoop.get(0).addChicken(new Chicken());
+        farmChickenCoop.get(0).addChicken(new Chicken());
+        farmChickenCoop.get(0).addChicken(new Chicken());
+        farmChickenCoop.get(0).addChicken(new Chicken());
+        farmChickenCoop.get(1).addChicken(new Chicken());
+        farmChickenCoop.get(1).addChicken(new Chicken());
+        farmChickenCoop.get(1).addChicken(new Chicken());
+        farmChickenCoop.get(1).addChicken(new Chicken());
+        farmChickenCoop.get(2).addChicken(new Chicken());
+        farmChickenCoop.get(2).addChicken(new Chicken());
+        farmChickenCoop.get(2).addChicken(new Chicken());
+        farmChickenCoop.get(3).addChicken(new Chicken());
+        farmChickenCoop.get(3).addChicken(new Chicken());
+        farmChickenCoop.get(3).addChicken(new Chicken());
+        farmChickenCoop.get(0).addChicken(new Chicken());
+        farmChickenCoop.get(1).addChicken(new Chicken());
+        farmChickenCoop.get(2).addChicken(new Chicken());
     }
 
 
@@ -111,16 +108,12 @@ public class Farm {
 
 
     public void addChickenCoop(ChickenCoop chickenCoop) {
-        this.farmChickencoop.add(chickenCoop);
+        this.farmChickenCoop.add(chickenCoop);
 
     }
 
     public void removeChickenCoop(ChickenCoop chickenCoop) {
-        this.farmChickencoop.remove(chickenCoop);
-    }
-
-    public FarmHouse getFarmhouse() {
-        return farmhouse;
+        this.farmChickenCoop.remove(chickenCoop);
     }
 
 }

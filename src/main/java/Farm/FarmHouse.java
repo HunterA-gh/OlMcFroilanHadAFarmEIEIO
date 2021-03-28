@@ -5,13 +5,8 @@ import Person.*;
 import java.util.ArrayList;
 
 public class FarmHouse {
-
     public ArrayList<Person> farmPeople = new ArrayList<Person>();
 
-    public FarmHouse() {
-        this.farmPeople.add(new Farmer());
-        this.farmPeople.add(new Pilot());
-    }
 
     public void addPerson(Person person){
         this.farmPeople.add(person);
@@ -21,8 +16,8 @@ public class FarmHouse {
         this.farmPeople.remove(person);
     }
 
-    public ArrayList getFarmPeople(){
-        return this.farmPeople;
+    public Person getPerson(int personNum) {
+        return this.farmPeople.get(personNum);
     }
 
     public int amountOfFarmPeople(){

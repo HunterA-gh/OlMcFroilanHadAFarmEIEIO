@@ -5,25 +5,23 @@ import Animals.Chicken;
 import java.util.ArrayList;
 
 
-
 public class ChickenCoop {
-
-    public ArrayList<Chicken> chickens = new ArrayList<>();
+    public ArrayList<Chicken> chickenCoop = new ArrayList<Chicken>();
 
     public void addChicken(Chicken chicken) {
-        this.chickens.add(chicken);
+        this.chickenCoop.add(chicken);
     }
 
     public void removeChicken(Chicken chicken){
-        this.chickens.remove(chicken);
+        this.chickenCoop.remove(chicken);
     }
 
-    public ArrayList getChicken(){
-        return chickens;
+    public Chicken getChicken(int chickenNum) {
+        return this.chickenCoop.get(chickenNum);
     }
 
     public int amountOfChickens(){
-        return this.chickens.size();
+        return this.chickenCoop.size();
     }
 }
 
