@@ -1,22 +1,17 @@
 package Farm;
 
-import Person.Person;
-import Vehicle.CropDuster;
+import Person.*;
 
 import java.util.ArrayList;
 
 public class FarmHouse {
 
-    public FarmHouse() {
-    }
-
-    public FarmHouse(ArrayList<Person> farmPeople) {
-        this.farmPeople = farmPeople;
-    }
-
     public ArrayList<Person> farmPeople = new ArrayList<Person>();
 
-
+    public FarmHouse() {
+        this.farmPeople.add(new Farmer());
+        this.farmPeople.add(new Pilot());
+    }
 
     public void addPerson(Person person){
         this.farmPeople.add(person);
@@ -25,7 +20,10 @@ public class FarmHouse {
         this.farmPeople.remove(person);
     }
     public ArrayList getFarmPeople(){
-        return farmPeople;
+        return this.farmPeople;
+    }
+    public int amountOfFarmPeople(){
+        return this.farmPeople.size();
     }
 
 }
