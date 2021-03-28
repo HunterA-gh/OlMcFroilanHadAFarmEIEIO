@@ -1,30 +1,35 @@
 package Farm;
 
+import Animals.Chicken;
 
 import java.util.ArrayList;
 
-public class Farm {
 
-    public ArrayList<Stable> farm = new ArrayList<>();
 
-    public void addStable(Stable stable) {
-        this.farm.add(stable);
+public class ChickenCoop {
+
+    public ArrayList<Chicken> chickens = new ArrayList<>();
+
+
+
+
+
+
+
+    public void addChicken(Chicken chicken) {
+        this.chickens.add(chicken);
     }
 
-    public ArrayList<ChickenCoop> farmChickencoop = new ArrayList<>();
-
-    public void addChickenCoop(ChickenCoop chickenCoop) {
-        this.farmChickencoop.add(chickenCoop);
-
+    public void removeChicken(Chicken chicken){
+        this.chickens.remove(chicken);
     }
-    public boolean farmHouse(boolean haveFarmHouse){
-        if (haveFarmHouse = true){
-            return true;
-        }else return false;
-
+    public ArrayList getChicken(){
+        return chickens;
     }
 
 
 
-
+    public int amountOfChickens(){
+    return this.chickens.size();
+    }
 }
