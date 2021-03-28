@@ -1,10 +1,12 @@
 package Person;
 
 import Field.Field;
+import Interfaces.Rideable;
+import Interfaces.Rider;
 import Vehicle.Aircraft;
 import Vehicle.CropDuster;
 
-public class Pilot extends Person {
+public class Pilot extends Person implements Rider {
 
     public Pilot(){
         this.name = "Froilanda";
@@ -28,6 +30,16 @@ public class Pilot extends Person {
 
     public void fertilizeCrops(CropDuster cropDuster, Field field){
         cropDuster.operate(field);
+    }
+
+    @Override
+    public void mount(Rideable rideable) {
+        rideable.startRiding();
+    }
+
+    @Override
+    public void dismount(Rideable rideable) {
+        rideable.stopRiding();
     }
 
 
