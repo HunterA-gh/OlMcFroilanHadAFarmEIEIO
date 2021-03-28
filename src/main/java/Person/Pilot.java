@@ -1,5 +1,7 @@
 package Person;
 
+import Vehicle.Aircraft;
+
 public class Pilot extends Person {
 
     public Pilot(){
@@ -12,7 +14,7 @@ public class Pilot extends Person {
     }
     
     public void fly(Aircraft aircraft){
-        aircraft.stopRiding();
+        aircraft.startRiding();
     }
 
     public void land(Aircraft aircraft){
