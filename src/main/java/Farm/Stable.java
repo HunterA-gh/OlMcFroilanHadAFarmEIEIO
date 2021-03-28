@@ -10,5 +10,15 @@ public class Stable {
                     this.stable.add(horse);
 
 }
-
+            public void removeHorse(Horse horse){
+                this.stable.remove(horse);
+            }
+            
+            public ArrayList getHorse(){
+                return stable;
+            }
+            
+            public int amountOfHorses(){
+                return this.stable.size();
+            }
 }
