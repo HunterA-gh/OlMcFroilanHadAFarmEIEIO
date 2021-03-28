@@ -10,7 +10,7 @@ public class CropRow {
     }
 
     public Crop getCrop(int cropNum){
-        return this.getCrop(cropNum);
+        return this.cropRow.get(cropNum);
     }
 
 
