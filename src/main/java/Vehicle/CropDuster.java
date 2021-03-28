@@ -5,9 +5,6 @@ import Interfaces.FarmVehicle;
 
 public class CropDuster extends Aircraft implements FarmVehicle {
 
-public void fly() {
-
-    }
 
     public void operate(Field field) {
 
@@ -26,6 +23,6 @@ public void fly() {
 
     @Override
     public String makeNoise() {
-        return null;
+        return "Cropduster engine";
     }
 }

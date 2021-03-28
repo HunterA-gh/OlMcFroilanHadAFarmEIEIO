@@ -2,9 +2,14 @@ package Vehicle;
 
 public abstract class Aircraft extends Vehicle{
 
-   void fly() {
+   public boolean isFlying;
+
+    public void setFlying() {
+        isFlying = true;
+        setHasRiderOn();
     }
-    void land() {
+    public void setLanded() {
+        isFlying = false;
     }
 
 }
