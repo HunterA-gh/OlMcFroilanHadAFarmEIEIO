@@ -34,38 +34,3 @@ public class ChickenCoop {
     }
 }
 
-
-
-
-
-    public void addStable(Stable stable) {
-        this.farmStable.add(stable);
-    }
-    public void removeStable(Stable stable) {
-    this.farmStable.remove(farmStable);
-    }
-    public ArrayList<Stable> getStable() {
-        return farmStable;
-    }
-
-
-    public void addChickenCoop(ChickenCoop chickenCoop) {
-        this.farmChickencoop.add(chickenCoop);
-
-    }
-    public void removeChickenCoop(ChickenCoop chickenCoop) {
-        this.farmChickencoop.remove(chickenCoop);
-    }
-
-    public FarmHouse getFarmhouse() {
-        return farmhouse;
-    }
-
-
-    }
-
-
-
-
-
-
