@@ -21,8 +21,11 @@ public class Farm {
     public Field farmField;
 
     public Farm(){
+        this.farmhouse = new FarmHouse();
+        tractors.add(new Tractor());
+        tractors.add(new Tractor());
 
-
+        this.farmDuster = new CropDuster();
 
         this.farmField.addCropRow(new CropRow());
         this.farmField.addCropRow(new CropRow());
@@ -57,13 +60,6 @@ public class Farm {
 
 
 
-
-
-
-
-
-        this.farmhouse = new FarmHouse();
-
         farmStable.add(new Stable());
         farmStable.add(new Stable());
         farmStable.add(new Stable());
@@ -103,12 +99,6 @@ public class Farm {
         farmChickencoop.get(0).addChicken(new Chicken());
         farmChickencoop.get(1).addChicken(new Chicken());
         farmChickencoop.get(2).addChicken(new Chicken());
-
-        tractors.add(new Tractor());
-        tractors.add(new Tractor());
-
-        this.farmDuster = new CropDuster();
-
     }
 
 
