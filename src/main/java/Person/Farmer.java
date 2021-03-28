@@ -33,7 +33,7 @@ public class Farmer extends Person implements Botanist, Rider {
     }
 
     @Override
-    public void plant(Field field, CropRow cropRow, int i, Crop crop) {
-        field.getCropRow(i).addCrop(crop);
+    public void plant(Field field, int rowNum, Crop crop) {
+        field.getCropRow(rowNum).addCrop(crop);
     }
 }
