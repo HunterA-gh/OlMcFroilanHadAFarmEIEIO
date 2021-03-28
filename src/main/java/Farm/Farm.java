@@ -44,6 +44,21 @@ public class Farm {
         this.farmField.getCropRow(2).addCrop(new CornStalk());
         this.farmField.getCropRow(2).addCrop(new TomatoPlant());
         this.farmField.getCropRow(2).addCrop(new CornStalk());
+        this.farmField.getCropRow(2).addCrop(new CornStalk());
+        
+        this.farmField.getCropRow(3).addCrop(new TomatoPlant());
+        this.farmField.getCropRow(3).addCrop(new CornStalk());
+        this.farmField.getCropRow(3).addCrop(new TomatoPlant());
+        
+        this.farmField.getCropRow(4).addCrop(new TomatoPlant());
+        this.farmField.getCropRow(4).addCrop(new CornStalk());
+        this.farmField.getCropRow(4).addCrop(new CornStalk());
+        this.farmField.getCropRow(4).addCrop(new TomatoPlant());
+
+
+
+
+
 
 
 
