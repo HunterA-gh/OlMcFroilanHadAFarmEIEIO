@@ -1,5 +1,6 @@
 package Vehicle;
 
+import Field.Field;
 import Interfaces.FarmVehicle;
 
 public class CropDuster extends Aircraft implements FarmVehicle {
@@ -8,21 +9,23 @@ public void fly() {
 
     }
 
-    public void operate(Farm farm) {
+    public void operate(Field field) {
 
     }
 
+
+    @Override
+    public void startRiding() {
+
+    }
+
+    @Override
+    public void stopRiding() {
+
+    }
+
+    @Override
     public String makeNoise() {
-
-        return "Plane engine";
+        return null;
     }
-
-    public void mount() {
-
-    }
-
-    public void dismount() {
-
-    }
-  
 }

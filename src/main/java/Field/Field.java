@@ -10,4 +10,10 @@ public class Field {
     }
 
 
+
+    public int getFieldSize(){
+        return this.field.size();
+    }
+
+
 }

@@ -1,5 +1,7 @@
 package Interfaces;
 
+import Field.Field;
+
 public interface FarmVehicle {
-  abstract void operate(Farm farm);
+  void operate(Field field);
 }

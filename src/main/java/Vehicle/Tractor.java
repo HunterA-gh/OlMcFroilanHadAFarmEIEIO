@@ -1,14 +1,12 @@
 package Vehicle;
 
+import Field.Field;
 import Interfaces.FarmVehicle;
 
 public class Tractor extends Vehicle implements FarmVehicle {
 
-  public Crop harvest(Crop crop) {
-        return new crop();
-    }
 
-    public void operate(Farm farm) {
+    public void operate(Field field) {
 
     }
 
@@ -17,12 +15,14 @@ public class Tractor extends Vehicle implements FarmVehicle {
         return "Tractor noises";
     }
 
-    public void mount() {
 
-    }
+  @Override
+  public void startRiding() {
 
-    public void dismount() {
+  }
 
-    }
+  @Override
+  public void stopRiding() {
 
+  }
 }
