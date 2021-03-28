@@ -9,6 +9,11 @@ public class CropRow {
         this.cropRow.add(crop);
     }
 
+    public Crop getCrop(int cropNum){
+        return this.getCrop(cropNum);
+    }
+
+
     public int getCropRowSize(){
         return this.cropRow.size();
     }

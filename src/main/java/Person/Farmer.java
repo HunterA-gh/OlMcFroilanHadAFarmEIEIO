@@ -2,7 +2,9 @@ package Person;
 
 import Field.Crop;
 import Field.CropRow;
+import Field.Field;
 import Interfaces.*;
+import Vehicle.Tractor;
 
 public class Farmer extends Person implements Botanist, Rider {
 
@@ -26,8 +28,12 @@ public class Farmer extends Person implements Botanist, Rider {
         rideable.stopRiding();
     }
 
-    @Override
-    public void plant(CropRow cropRow, Crop crop) {
+    public void useTractor(Tractor tractor, Field field){
+        tractor.operate(field);
+    }
 
+    @Override
+    public void plant(Field field, CropRow cropRow, int i, Crop crop) {
+        field.getCropRow(i).addCrop(crop);
     }
 }

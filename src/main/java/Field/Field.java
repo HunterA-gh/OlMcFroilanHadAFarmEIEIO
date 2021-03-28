@@ -9,6 +9,9 @@ public class Field {
         this.field.add(cropRow);
     }
 
+    public CropRow getCropRow(int rowNum){
+       return this.field.get(rowNum);
+    }
 
 
     public int getFieldSize(){

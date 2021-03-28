@@ -8,4 +8,8 @@ public abstract class Vehicle implements Rideable, NoiseMaker {
     public void setHasRiderOn() {
         this.hasRiderOn = true;
     }
+
+    public void setHasRiderOff(){
+        this.hasRiderOn = false;
+    }
 }

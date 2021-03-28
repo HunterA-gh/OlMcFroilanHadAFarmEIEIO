@@ -3,5 +3,5 @@ package Interfaces;
 import Field.*;
 
 public interface Botanist {
-    void plant(CropRow cropRow, Crop crop);
+    void plant(Field field, CropRow cropRow, int i, Crop crop);
 }

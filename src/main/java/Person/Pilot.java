@@ -1,6 +1,8 @@
 package Person;
 
+import Field.Field;
 import Vehicle.Aircraft;
+import Vehicle.CropDuster;
 
 public class Pilot extends Person {
 
@@ -13,12 +15,19 @@ public class Pilot extends Person {
         return "Gonna do some flyin' today wee";
     }
     
-    public void fly(Aircraft aircraft){
+    public void getOnAndFlyCropDuster(Aircraft aircraft){
         aircraft.startRiding();
+        aircraft.fly();
     }
 
-    public void land(Aircraft aircraft){
+    public void landAndGetOffCropDuster(Aircraft aircraft){
         aircraft.stopRiding();
+        aircraft.land();
+
+    }
+
+    public void fertilizeCrops(CropDuster cropDuster, Field field){
+        cropDuster.operate(field);
     }
 
 
