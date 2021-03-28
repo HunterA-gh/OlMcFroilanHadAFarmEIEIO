@@ -1,16 +1,12 @@
 package Farm;
 
-
 import Animals.*;
-import EdibleItems.EarCorn;
-import EdibleItems.Tomato;
 import Field.*;
 import Interfaces.*;
 import Vehicle.*;
 
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Farm {
     public ArrayList<Stable> farmStable = new ArrayList<>();
@@ -20,7 +16,7 @@ public class Farm {
     public FarmHouse farmhouse;
     public Field farmField;
 
-    public Farm(){
+    public Farm() {
         this.farmhouse = new FarmHouse();
         tractors.add(new Tractor());
         tractors.add(new Tractor());
@@ -48,16 +44,15 @@ public class Farm {
         this.farmField.getCropRow(2).addCrop(new TomatoPlant());
         this.farmField.getCropRow(2).addCrop(new CornStalk());
         this.farmField.getCropRow(2).addCrop(new CornStalk());
-        
+
         this.farmField.getCropRow(3).addCrop(new TomatoPlant());
         this.farmField.getCropRow(3).addCrop(new CornStalk());
         this.farmField.getCropRow(3).addCrop(new TomatoPlant());
-        
-        this.farmField.getCropRow(4).addCrop(new TomatoPlant());
-        this.farmField.getCropRow(4).addCrop(new CornStalk());
-        this.farmField.getCropRow(4).addCrop(new CornStalk());
-        this.farmField.getCropRow(4).addCrop(new TomatoPlant());
 
+        this.farmField.getCropRow(4).addCrop(new TomatoPlant());
+        this.farmField.getCropRow(4).addCrop(new CornStalk());
+        this.farmField.getCropRow(4).addCrop(new CornStalk());
+        this.farmField.getCropRow(4).addCrop(new TomatoPlant());
 
 
         farmStable.add(new Stable());
@@ -100,17 +95,16 @@ public class Farm {
         farmChickencoop.get(1).addChicken(new Chicken());
         farmChickencoop.get(2).addChicken(new Chicken());
     }
-
-
-
 
 
     public void addStable(Stable stable) {
         this.farmStable.add(stable);
     }
+
     public void removeStable(Stable stable) {
-    this.farmStable.remove(farmStable);
+        this.farmStable.remove(farmStable);
     }
+
     public ArrayList<Stable> getStable() {
         return farmStable;
     }
@@ -120,6 +114,7 @@ public class Farm {
         this.farmChickencoop.add(chickenCoop);
 
     }
+
     public void removeChickenCoop(ChickenCoop chickenCoop) {
         this.farmChickencoop.remove(chickenCoop);
     }
@@ -128,8 +123,7 @@ public class Farm {
         return farmhouse;
     }
 
-
-    }
+}
 
 
 

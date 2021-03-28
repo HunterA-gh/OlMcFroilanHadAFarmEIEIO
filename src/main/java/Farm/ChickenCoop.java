@@ -10,7 +10,6 @@ public class ChickenCoop {
 
     public ArrayList<Chicken> chickens = new ArrayList<>();
 
-
     public void addChicken(Chicken chicken) {
         this.chickens.add(chicken);
     }
@@ -18,14 +17,13 @@ public class ChickenCoop {
     public void removeChicken(Chicken chicken){
         this.chickens.remove(chicken);
     }
+
     public ArrayList getChicken(){
         return chickens;
     }
 
-
-
     public int amountOfChickens(){
-    return this.chickens.size();
+        return this.chickens.size();
     }
 }
 

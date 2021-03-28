@@ -16,12 +16,15 @@ public class FarmHouse {
     public void addPerson(Person person){
         this.farmPeople.add(person);
     }
+
     public void removePerson(Person person){
         this.farmPeople.remove(person);
     }
+
     public ArrayList getFarmPeople(){
         return this.farmPeople;
     }
+
     public int amountOfFarmPeople(){
         return this.farmPeople.size();
     }
