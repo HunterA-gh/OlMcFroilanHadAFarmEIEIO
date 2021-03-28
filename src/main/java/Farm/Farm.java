@@ -2,12 +2,15 @@ package Farm;
 
 
 import Animals.*;
+import EdibleItems.EarCorn;
+import EdibleItems.Tomato;
 import Field.*;
 import Interfaces.*;
 import Vehicle.*;
 
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Farm {
     public ArrayList<Stable> farmStable = new ArrayList<>();
@@ -27,8 +30,20 @@ public class Farm {
         this.farmField.addCropRow(new CropRow());
         this.farmField.addCropRow(new CropRow());
 
-        this.farmField.getCropRow(0).addCrop(new Co);
+        this.farmField.getCropRow(0).addCrop(new CornStalk());
+        this.farmField.getCropRow(0).addCrop(new CornStalk());
+        this.farmField.getCropRow(0).addCrop(new CornStalk());
+        this.farmField.getCropRow(0).addCrop(new CornStalk());
+        this.farmField.getCropRow(0).addCrop(new CornStalk());
 
+
+        this.farmField.getCropRow(1).addCrop(new TomatoPlant());
+        this.farmField.getCropRow(1).addCrop(new TomatoPlant());
+        this.farmField.getCropRow(1).addCrop(new TomatoPlant());
+
+        this.farmField.getCropRow(2).addCrop(new CornStalk());
+        this.farmField.getCropRow(2).addCrop(new TomatoPlant());
+        this.farmField.getCropRow(2).addCrop(new CornStalk());
 
 
 
@@ -110,6 +125,8 @@ public class Farm {
 
 
     }
+
+
 
 
 
